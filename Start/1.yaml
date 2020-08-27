@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapiuserservice
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapiuserservice
+  template:
+    metadata:
+      labels: 
+        app: webapiuserservice
+    spec:
+      containers:
+        - name: web
+          image: webapiuserservice:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: userservice
+spec:
+  type: NodePort
+  selector:
+    app: webapiuserservice
+  ports:
+  - port: 80 
+    targetPort: 80
+    nodePort: 30002
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapischoolservice
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapischoolservice
+  template:
+    metadata:
+      labels: 
+        app: webapischoolservice
+    spec:
+      containers:
+        - name: web
+          image: webapischoolservice:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: schoolservice
+spec:
+  type: NodePort
+  selector:
+    app: webapischoolservice
+  ports:
+  - port: 80 
+    targetPort: 80
+    nodePort: 30003

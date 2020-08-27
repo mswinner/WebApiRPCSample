@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseRemoteCall.Set", "src\BaseRemoteCall.Attr\BaseRemoteCall.Set.csproj", "{256B34B8-DAF8-4BE6-A84B-93F36C9182E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseRemoteCall", "src\BaseRemoteCall\BaseRemoteCall.csproj", "{72F799DD-3953-4005-A36D-618182E33A5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2A09C061-1334-4BA4-9880-A984D8C74C1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{08C85923-B54F-45AF-8E09-EDC2883774BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webapi.UserService", "example\Webapi.UserService\Webapi.UserService.csproj", "{629EBC2A-1DEC-4CF7-9D27-1FF30834CDFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.SchoolService", "example\WebApi.SchoolService\WebApi.SchoolService.csproj", "{D7840980-5ECB-4C7E-9301-90A5FAFDE071}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRemoteService", "example\IRemoteService\IRemoteService.csproj", "{DFE22130-274A-4FD1-AC10-CBE7B428FB18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{256B34B8-DAF8-4BE6-A84B-93F36C9182E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256B34B8-DAF8-4BE6-A84B-93F36C9182E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256B34B8-DAF8-4BE6-A84B-93F36C9182E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256B34B8-DAF8-4BE6-A84B-93F36C9182E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F799DD-3953-4005-A36D-618182E33A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F799DD-3953-4005-A36D-618182E33A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F799DD-3953-4005-A36D-618182E33A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F799DD-3953-4005-A36D-618182E33A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{629EBC2A-1DEC-4CF7-9D27-1FF30834CDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{629EBC2A-1DEC-4CF7-9D27-1FF30834CDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{629EBC2A-1DEC-4CF7-9D27-1FF30834CDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{629EBC2A-1DEC-4CF7-9D27-1FF30834CDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7840980-5ECB-4C7E-9301-90A5FAFDE071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7840980-5ECB-4C7E-9301-90A5FAFDE071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7840980-5ECB-4C7E-9301-90A5FAFDE071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7840980-5ECB-4C7E-9301-90A5FAFDE071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE22130-274A-4FD1-AC10-CBE7B428FB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE22130-274A-4FD1-AC10-CBE7B428FB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE22130-274A-4FD1-AC10-CBE7B428FB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE22130-274A-4FD1-AC10-CBE7B428FB18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{256B34B8-DAF8-4BE6-A84B-93F36C9182E7} = {2A09C061-1334-4BA4-9880-A984D8C74C1B}
+		{72F799DD-3953-4005-A36D-618182E33A5D} = {2A09C061-1334-4BA4-9880-A984D8C74C1B}
+		{629EBC2A-1DEC-4CF7-9D27-1FF30834CDFD} = {08C85923-B54F-45AF-8E09-EDC2883774BA}
+		{D7840980-5ECB-4C7E-9301-90A5FAFDE071} = {08C85923-B54F-45AF-8E09-EDC2883774BA}
+		{DFE22130-274A-4FD1-AC10-CBE7B428FB18} = {08C85923-B54F-45AF-8E09-EDC2883774BA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {109C5956-9660-4126-85A3-E5C59C948DD4}
+	EndGlobalSection
+EndGlobal
